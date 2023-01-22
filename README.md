@@ -4,6 +4,19 @@ I made my first steps in react and my very exited.
 I am learning programming with a YouCode programming course.
 I hope that you can see my progress because it is difficult.
 
+# Demo
+https://maram-9.github.io/toDoList-react/
+
+## Languages and conventions used in the project:
+- React
+- HTML
+- JS
+- CSS
+- BEM
+- ES6+ features
+- Grid layout
+- @media queries
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
