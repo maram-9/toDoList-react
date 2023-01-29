@@ -1,11 +1,14 @@
 # To do List in React
-Hello, it is my fifth website. 
-I made my first steps in react and my very exited. 
+Hello, it is my website. 
+I made my first steps in react and I am very exited. I modificated my to do list in react with interaction. 
 I am learning programming with a YouCode programming course.
-I hope that you can see my progress because it is difficult.
+I hope that you can see my progress.
 
 # Demo
 https://maram-9.github.io/toDoList-react/
+
+## Interface view
+![animation](public/Animation.gif)
 
 ## Languages and conventions used in the project:
 - React
