@@ -4,29 +4,30 @@ import { useState } from "react";
 const Form = ({ addNewTask }) => {
     const [newTaskContent, setNewTaskContent] = useState("");
 
-    const onFormSubmit = (event) => {
-        event.preventDefault();
+const onFormSubmit = (event) => {
+    event.preventDefault();
+    const trimmedNewTaskContent = newTaskContent.trim();
 
-        if (newTaskContent.trim() === "") {
-            return;
-          }
+    if (trimmedNewTaskContent() === "") {
+        return;
+    }
           
-        addNewTask(newTaskContent.trim());
+        addNewTask(trimmedNewTaskContent);
         setNewTaskContent("");
     };
 
     return (
-    <form className="form" onSubmit={onFormSubmit}>
-    <input 
-        autoFocus
-        value={newTaskContent} 
-        className="form__input" 
-        placeholder="Co jest do zrobienia?"
-        onChange={({ target }) => setNewTaskContent(target.value)}
-    />
-    <button className="form__button">Dodaj zadanie</button>
-</form>
-);
+        <form className="form" onSubmit={onFormSubmit}>
+            <input 
+                autoFocus
+                value={newTaskContent} 
+                className="form__input" 
+                placeholder="Co jest do zrobienia?"
+                onChange={({ target }) => setNewTaskContent(target.value)}
+            />
+            <button className="form__button">Dodaj zadanie</button>
+        </form>
+    );
 };
 
 
