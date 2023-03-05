@@ -6,12 +6,7 @@ import Header from "./Header";
 import Container from "./Container";
 import { useEffect, useState } from 'react'
 
-const getInitialTasks = () => {
-  const tasksFromLocalStorage = localStorage.getItem("tasks"); 
-  return tasksFromLocalStorage
-    ? JSON.parse(tasksFromLocalStorage)
-    : [];
-};
+const getInitialTasks = () => JSON.parse(localStorage.getItem("tasks")) || [];
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
