@@ -3,16 +3,10 @@ import Tasks from './Tasks';
 import Buttons from './Buttons';
 import Section from './Section';
 import Header from './Header';
-import Container from './Container';
-import { useState } from 'react';
+import Container from './Container/styled';
 import { useTasks } from "./useTasks";
 
 function App() {
-  const [hideDoneTasks, setHideDoneTasks] = useState(false);
-
-  const toggleHideDoneTasks = () => {
-    setHideDoneTasks(hideDoneTasks => !hideDoneTasks);
-  };
 
   const {
     tasks,
@@ -20,6 +14,8 @@ function App() {
     toggleTaskDone,
     setAllDone,
     addNewTask,
+    toggleHideDone, 
+    hideDone, 
   } = useTasks();
 
   return (
@@ -34,15 +30,15 @@ function App() {
       body={
         <Tasks 
         tasks={tasks} 
-        hideDoneTasks={hideDoneTasks}
+        hideDone={hideDone}
         removeTask={removeTask}
         toggleTaskDone={toggleTaskDone} 
         />}
       extraHeaderContent={<
         Buttons 
         tasks={tasks} 
-        hideDoneTasks={hideDoneTasks}
-        toggleTaskDone={toggleTaskDone} 
+        hideDone={hideDone}
+        toggleHideDone={toggleHideDone} 
         setAllDone={setAllDone} 
         />}
      />

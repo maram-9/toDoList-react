@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { content } from "./Tasks/styled";
 
 const getInitialTasks = () => {
     const tasksFromLocalStorage = localStorage.getItem("tasks");
@@ -10,6 +9,12 @@ const getInitialTasks = () => {
 };
 
 export const useTasks = () => {
+    const [hideDoneTasks, setHideDoneTasks] = useState(false);
+
+    const toggleHideDoneTasks = () => {
+    setHideDoneTasks(hideDoneTasks => !hideDoneTasks);
+    };
+
     const [tasks, setTasks] = useState(getInitialTasks);
 
     useEffect(() => {
@@ -53,5 +58,7 @@ export const useTasks = () => {
         toggleTaskDone, 
         setAllDone, 
         addNewTask,
+        toggleHideDoneTasks,
+        hideDoneTasks,
     };
 };
