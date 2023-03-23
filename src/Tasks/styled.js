@@ -49,3 +49,17 @@ export const Button = styled.button`
         filter: brightness(120%);
     }
 `;
+    export const ToggleDoneButton = styled(Button)`
+    background: ${({ theme }) => theme.color.forestGreen};
+
+    &:hover {
+        filter: brightness(110%);
+    }
+`;
+
+    export const RemoveButton = styled(Button)`
+    background-color: ${({ theme }) => theme.color.crimson};
+        &:hover{
+            filter: brightness(110%);
+        }
+`;
