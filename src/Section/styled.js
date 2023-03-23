@@ -25,6 +25,6 @@ export const Title = styled.h2`
     margin: 0%;
 `;
 
-export const Body = styled.div`
+export const SectionBody = styled.div`
     padding: 20px;
 `;
