@@ -14,7 +14,7 @@ function App() {
     toggleTaskDone,
     setAllDone,
     addNewTask, 
-    toggleHideDoneTasks,
+    toggleHideDone,
     hideDone, 
   } = useTasks();
 
@@ -38,7 +38,7 @@ function App() {
         Buttons 
         tasks={tasks} 
         hideDone={hideDone}
-        toggleHideDoneTasks={toggleHideDoneTasks}
+        toggleHideDone={toggleHideDone}
         setAllDone={setAllDone} 
         />}
      />

@@ -9,10 +9,10 @@ const getInitialTasks = () => {
 };
 
 export const useTasks = () => {
-    const [hideDoneTasks, setHideDoneTasks] = useState(false);
+    const [hideDone, setHideDoneTasks] = useState(false);
 
-    const toggleHideDoneTasks = () => {
-    setHideDoneTasks(hideDoneTasks => !hideDoneTasks);
+    const toggleHideDone = () => {
+    setHideDoneTasks(hideDone => !hideDone);
     };
 
     const [tasks, setTasks] = useState(getInitialTasks);
@@ -58,7 +58,7 @@ export const useTasks = () => {
         toggleTaskDone, 
         setAllDone, 
         addNewTask,
-        toggleHideDoneTasks,
-        hideDoneTasks,
+        toggleHideDone,
+        hideDone,
     };
 };
