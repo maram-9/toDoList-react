@@ -1,6 +1,7 @@
 import { List, Item, Content, ToggleDoneButton, RemoveButton } from './styled';
+//import { useSelector, useDispatch } from "react-redux";
 
-const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
+const TaskList = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
     <List>
       {tasks.map(task => (
         <Item key={task.id} 
@@ -24,4 +25,4 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
   </List>
 );
 
-export default Tasks; 
+export default TaskList; 

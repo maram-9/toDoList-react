@@ -8,16 +8,16 @@ const Form = ({ addNewTask }) => {
 const onFormSubmit = (event) => {
     event.preventDefault();
 
-    const trimmedNewTaskContent = newTaskContent.trim();
+        const trimmedNewTaskContent = newTaskContent.trim();
 
-    if (!trimmedNewTaskContent) {
-        return;
-    }
+        if (!trimmedNewTaskContent) {
+            return;
+        }
           
-        addNewTask(trimmedNewTaskContent);
-        setNewTaskContent("");
-        inputRef.current.focus();
-    };
+            addNewTask(trimmedNewTaskContent);
+            setNewTaskContent("");
+            inputRef.current.focus();
+        };
 
     return (
         <StyledForm onSubmit={onFormSubmit}>
