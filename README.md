@@ -22,12 +22,17 @@ Step by step:
 6. Click the "Ukończ wszystkie" button to mark all tasks as completed
 
 ## Languages and conventions used in the project:
+- JS
+- HTML
+- GIT
+- CSS
 - React
 - JSX
 - BEM
 - normalise.css
 - styled-components
 - own Hooks
+
 
 
 # Getting Started with Create React App
