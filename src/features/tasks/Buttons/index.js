@@ -1,6 +1,13 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { Wrapper, Button } from './styled';
-import { toggleHideDone, selectAreTasksEmpty, selectHideDone, selectIsEveryTaskDone, setAllDone} from '../tasksSlice';
+import { 
+    toggleHideDone, 
+    selectAreTasksEmpty, 
+    selectHideDone, 
+    selectIsEveryTaskDone, 
+    setAllDone, 
+    fetchExampleTasks,
+} from '../tasksSlice';
 
 const Buttons = () => {
     const areTasksEmpty = useSelector(selectAreTasksEmpty);
@@ -9,20 +16,25 @@ const Buttons = () => {
     const dispatch = useDispatch();
     
     return (
-        !areTasksEmpty && (
             <Wrapper>
-                <Button onClick={() => dispatch(toggleHideDone())}>
-                    {hideDone ? "Pokaż" : "Ukryj"} ukończone
+                <Button onClick={() => dispatch(fetchExampleTasks())}>
+                    Pobierz przkladowe zadania 
                 </Button>
-                <Button
-                    onClick={() => dispatch(setAllDone())}
-                    disabled={isEveryTaskDone}
-                >
-                    Ukończ wszystkie
-                </Button>
+                {!areTasksEmpty && (
+                    <>
+                    <Button onClick={() => dispatch(toggleHideDone())}>
+                        {hideDone ? "Pokaż" : "Ukryj"} ukończone
+                    </Button>
+                    <Button
+                        onClick={() => dispatch(setAllDone())}
+                        disabled={isEveryTaskDone}
+                    >
+                        Ukończ wszystkie
+                    </Button>
+                    </>
+                )}
             </Wrapper>
-        )
-    )
+        );
 }
 
 export default Buttons;
