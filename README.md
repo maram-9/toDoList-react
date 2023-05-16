@@ -1,9 +1,7 @@
 # To do List in React
 Hello!
-I made project during programming course with YouCode. 
-This is to do list web application builted with React, using JSX syntax. With this application you can add tasks, change theis status or remove them. 
-You can use it for example like shopping list.  
-I hope that you can see my progress.
+It's a very simple aplication based on HTML,CSS,JS and BEM, created as part of a youcode course and skills exercises.
+You can mark them if you've done and removed them. At the top of the application there is navigation, where you will find a list of tasks and information about the author.
 
 # Demo
 https://maram-9.github.io/toDoList-react/
@@ -15,23 +13,35 @@ https://maram-9.github.io/toDoList-react/
 
 Step by step:
 1. Input a task you wish to add
-2. Click the "Dodaj zadanie" button to add the task to the list
-3. Click on the checkbox to mark a task as completed
-4. Click the "🗑" button to remove a task from the list
-5. Click the "Ukryj ukończone" button to hide all completed tasks
-6. Click the "Ukończ wszystkie" button to mark all tasks as completed
+2. Click the "Pobierz przykladowe zadania" button to download example tasks
+3. Click the "Dodaj zadanie" button to add new task to the list
+4. Click on the checkbox to mark a task as completed
+5. Click the "🗑" button to remove a task from the list
+6. Click the "Ukryj ukończone" button to hide all completed tasks
+7. Click the "Ukończ wszystkie" button to mark all tasks as completed
+8. Write key word in "Filtruj zadania" and find your task by Navigation
+
+You can read about author by pressing the "autor" button or simple pressing the button "zadania".
 
 ## Languages and conventions used in the project:
-- JS
-- HTML
-- GIT
-- CSS
-- React
-- JSX
-- BEM
-- normalise.css
-- styled-components
-- own Hooks
+`React.js`
+`React - Redux`
+`React - Ruter`
+`Redux Toolkit`
+`Custom Hook (useEffect, useState, useRef)`
+`Local Storage`
+`HTML`
+`BEM`
+`CSS (Grid, Flex, media queries, transition)`
+`JavaScript ES6+`
+`Normalized.css`
+`Styled-components`
+`Theme Provider`
+`GlobalStyles & Theme`
+`JSX`
+`Git`
+`Webpack`
+`Babel`
 
 
 
