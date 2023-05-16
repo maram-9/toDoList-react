@@ -7,7 +7,7 @@ import {
     selectIsEveryTaskDone, 
     setAllDone, 
     fetchExampleTasks,
-} from '../tasksSlice';
+} from '../../tasksSlice';
 
 const Buttons = () => {
     const areTasksEmpty = useSelector(selectAreTasksEmpty);
@@ -17,11 +17,11 @@ const Buttons = () => {
     
     return (
             <Wrapper>
-                <Button onClick={() => dispatch(fetchExampleTasks())}>
-                    Pobierz przkladowe zadania 
-                </Button>
                 {!areTasksEmpty && (
-                    <>
+                <>
+                    <Button onClick={() => dispatch(fetchExampleTasks())}>
+                        Pobierz przykladowe zadania 
+                    </Button>
                     <Button onClick={() => dispatch(toggleHideDone())}>
                         {hideDone ? "Pokaż" : "Ukryj"} ukończone
                     </Button>
@@ -35,6 +35,6 @@ const Buttons = () => {
                 )}
             </Wrapper>
         );
-}
+};
 
 export default Buttons;
