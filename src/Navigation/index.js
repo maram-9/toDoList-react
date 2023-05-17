@@ -1,4 +1,3 @@
-import React from "react";
 import {toAuthor, toTasks} from "../routes";
 import { List, Item, StyledNavLink, Nav } from "./styled";
 
