@@ -1,3 +1,4 @@
+import React from 'react';
 import Form from './Form';
 import Buttons from './Buttons';
 import Section from '../../../common/Section';
