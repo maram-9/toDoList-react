@@ -1,11 +1,11 @@
 [
     {
-        "content": "Oznaczyc to zadanie jako ukonczone",
+        "content": "Mark this task as complete",
         "done": false, 
         "id": "NcSnuJLNwukdtgj8NU8am"
     }, 
     {
-        "content": "Ukonczyc wszystkie zadania",
+        "content": "Complete all tasks",
         "done": false, 
         "id": "HSQSx1wu7gdaimlkEJGu"
     }
