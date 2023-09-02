@@ -1,7 +1,7 @@
 # To do List in React
 Hello!
-It's a very simple aplication created as part of a youcode course and skills exercises.
-You can mark task if you've done and removed them. At the top of the application there is navigation, where you will find a list of tasks and information about the author or simple pressing the button "zadania" and go to tasks.
+It's a very simple application created as part of a youcode course and skills exercises.
+You can mark task if you've done and removed them. At the top of the application there is navigation, where you will find a list of tasks and information about the author or simple pressing the button "tasks" and go to tasks.
 
 # Demo
 https://maram-9.github.io/toDoList-react/
@@ -13,13 +13,13 @@ https://maram-9.github.io/toDoList-react/
 
 Step by step:
 1. Input a task you wish to add
-2. Click the "Pobierz przykladowe zadania" button to download example tasks
-3. Click the "Dodaj zadanie" button to add new task to the list
+2. Click the "Download sample tasks" button to download example tasks
+3. Click the "Add tasks" button to add new task to the list
 4. Click on the checkbox to mark a task as completed
 5. Click the "🗑" button to remove a task from the list
-6. Click the "Ukryj ukończone" button to hide all completed tasks
-7. Click the "Ukończ wszystkie" button to mark all tasks as completed
-8. Write key word in "Filtruj zadania" and find your task by Searching
+6. Click the "Hide complieted" button to hide all completed tasks
+7. Click the "Complete all" button to mark all tasks as completed
+8. Write key word in "Filter tasks" and find your task by Searching
 
 
 ## Languages and conventions used in the project:

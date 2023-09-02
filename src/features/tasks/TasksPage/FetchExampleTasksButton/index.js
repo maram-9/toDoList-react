@@ -10,8 +10,8 @@ const FetchExampleTasksButton = () => {
         <Button disabled={loading} onClick={() =>dispatch(fetchExampleTasks())}>
             {
                 loading
-                    ? "Ladowanie..."
-                    : "Pobierz przykladowe zadania"
+                    ? "Loading..."
+                    : "Download sample tasks"
             }
         </Button>
     );

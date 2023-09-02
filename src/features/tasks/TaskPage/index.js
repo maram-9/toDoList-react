@@ -11,11 +11,11 @@ function TaskPage() {
 
   return (
     <Container>
-     <Header title="Szczegoly zadania" />
+     <Header title="Task details" />
      <Section 
-      title={task ? task.content : "Sorry, nie ma takiego zadania!"}
+      title={task ? task.content : "Sorry, there is no such task!"}
       body={!!task && (
-      <><strong>Ukonczono:</strong> {task.done ? "Tak" : "Nie"}</>
+      <><strong>Completed:</strong> {task.done ? "Yes" : "No"}</>
       )} 
     />
     </Container>
